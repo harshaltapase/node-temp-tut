@@ -12,3 +12,10 @@
 //manual approach (create package.json in the root, create properties etc)
 //npm init (step by step, press enter to skip)
 //npm init -y (everything deafult)
+
+const _ = require('lodash');
+
+const item = [1, [2, [3, [4]]]];
+const newitems = _.flattenDeep(item);
+
+console.log(newitems);
